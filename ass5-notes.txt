@@ -1,0 +1,21 @@
+ASSIGNMENT 5
+
+Deadline: 25/3
+
+Objectives:
+* Write an hypothesis framed by the course material
+* Collect and visualize data in order to answer the hypothesis
+* Determine which visualization was most useful and why
+
+Report:
+* Max 10 pages
+* LaTeX
+* Academic Writing Guidelines
+* Discusses "visualization aspects covered in the course."
+
+Ideas:
+- Eyetracking a player playing a horror game (e.g. SCP)
+- Eyetracking in a strategy game (time spent checking resources, checking control groups, etc.)
+- Death points in a platform game, visualized as a heatmap (might be difficult to extract raw data).
+- Search order in an area in an adventure game (visualization needs temporal information).
+- Eyetracking in an adventure game (search for items).
