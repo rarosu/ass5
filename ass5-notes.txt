@@ -19,3 +19,14 @@ Ideas:
 - Death points in a platform game, visualized as a heatmap (might be difficult to extract raw data).
 - Search order in an area in an adventure game (visualization needs temporal information).
 - Eyetracking in an adventure game (search for items).
+
+Experiment
+- Track the eye movements of a player of SCP Containment Breach.
+- Hypothesis 1: Eyes scan the borders of the screen.
+- Hypothesis 2: Eyes focus on the HUD more when encountering an SCP than when not.
+- Let the player do a test run before the actual recording.
+- Let the player play from the beginning and encounter a few SCPs. This will give us periods with exploration and periods with encounters which are interesting.
+
+Visualizations
+- Heatmaps over intervals
+- Measure time focused on the center of the screen and by the borders of the screen. Visualize as a bar diagram.
