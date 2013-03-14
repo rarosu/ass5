@@ -1,2 +1,24 @@
 P2 P3 är samma försöksperson
 R3 R4 är samma försöksperson
+
+5 deltagare
+
+
+Deltagare 1:
+	Försöksperson 01
+
+Deltagare 2:
+	P02, P03
+	R3, R4
+
+Deltagare 3:
+	P04
+	R5
+
+Deltagare 4:
+	P05
+	R6
+
+Deltagare 5:
+	P06, P07
+	R7, R8
