@@ -1,8 +1,4 @@
-P2 P3 är samma försöksperson
-R3 R4 är samma försöksperson
-
 5 deltagare
-
 
 Deltagare 1:
 	Försöksperson 01
@@ -11,14 +7,12 @@ Deltagare 1:
 
 Deltagare 2:
 	P02, P03
-	R3, R4
 
-	P02: No contact (electrocuted)
-	P03: Hit escape
+	P02: No contact (electrocuted), Hit escape
+	P03: Bad contact
 
 Deltagare 3:
 	P04
-	R5
 	
 	Test: No contact (electrocuted)
 	Sharp: Bad contact
@@ -26,7 +20,6 @@ Deltagare 3:
 
 Deltagare 4:
 	P05
-	R6
 	
 	Test: No contact (electrocuted)
 	Test 2nd: Bad contact
@@ -34,6 +27,5 @@ Deltagare 4:
 
 Deltagare 5:
 	P06, P07
-	R7, R8
 	
 	Test: Contact (good contact)
