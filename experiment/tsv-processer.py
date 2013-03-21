@@ -3,7 +3,7 @@ import sys
 
 if len(sys.argv) > 2:
 	total = 0
-	durations = [0, 0]
+	duration = 0	# on HUD
 
 	with open(sys.argv[1], 'r') as f:
 		lines = f.readlines()
@@ -11,8 +11,11 @@ if len(sys.argv) > 2:
 			line = line.strip()
 			columns = line.split('\t')
 			
-			durations[int(columns[2])] += int(columns[1])		
+			if int(columns[2]) == 1:
+				duration += int(columns[1])
 			total += int(columns[1])
+	
 	with open(sys.argv[2], 'w') as o:
-		for d in durations:
-			print >> o, "%f" % (float(d) / total)
+		p = (float(duration) / total) * 100.0
+		
+		print >> o, "%f" % p
