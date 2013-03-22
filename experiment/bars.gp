@@ -9,4 +9,4 @@ set yrange [0:2]
 set style fill solid border rgb "black"
 
 #plot 'contact-result.txt' every ::1::1 using 2:xtic(1)
-plot 'nocontact-result.txt' every ::0::0 using 1:xtic('') title 'Monsterkontakt', 'contact-result.txt' every ::0::0 using 1:xtic('') title 'Ingen Monsterkontakt'
+plot 'contact-result.txt' every ::0::0 using 1:xtic('') title 'Monsterkontakt', 'nocontact-result.txt' every ::0::0 using 1:xtic('') title 'Ingen Monsterkontakt'
