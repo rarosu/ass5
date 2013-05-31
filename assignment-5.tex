@@ -19,13 +19,30 @@
 %\end{abstract}
 
 \section{Introduktion}
-Målet med experimentet är att studera ögonrörelser i spelet SCP: Containment Breach \cite{SCP}, speciellt hur mycket fokus som läggs på HUD jämtemot omgivningen. SCP: Containment Breach är ett skräckspel med slumpgenererade nivåer och händelser. Ett stort fokus i spelet är att man måste blinka med jämna mellanrum och att det finns ett monster som kan röra sig när man blinkar. Hur mycket tid man har kvar tills man måste blinka syns i HUDen och en spelare måste hålla koll på det.
+Målet med experimentet är att studera ögonrörelser i spelet SCP: Containment Breach \cite{SCP}, speciellt hur mycket fokus som läggs på spelets \textit{heads-up display} (HUD) gentemot omgivningen. 
+
+SCP: Containment Breach är ett skräckspel sett från ett förstapersonsperspektiv med slumpgenererade nivåer och händelser. Målet med spelet är att fly ut ur ett nedlåst laboratorium där det finns livsfarliga monster som brutit sig ur sin säkra förvaring. Det monster spelaren oftast stöter på kallas SCP-173 (se Figur~\ref{hud}) och kan röra sig mycket fort när hen inte tittar på det. När det syns på skärmen står dock monstret still. Övriga monster har ingen bäring på experimentet och bortses därför från helt och hållet.
+
+Ett stort fokus i spelet är att spelaren måste blinka med jämna mellanrum vilket resulterar i att skärmen blir svart för ett ögonblick. Denna blinkning gör det fritt fram för SCP-173 att röra sig, och om spelaren då står för nära är spelet slut. Hur mycket tid spelaren har kvar tills hen måste blinka syns i HUDen.
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics*[width=0.63\columnwidth]{experiment/SCP-173-06-aoi.png}
+        \caption{Skärmdump med HUDen markerad inom det röda området.}
+        \label{hud}
+    \end{center}
+\end{figure}
+
+Den övre stapeln visar hur mycket tid spelaren har tills hen automatiskt blinkar. Spelaren kan blinka när som helst och återställa tiden tills hen behöver blinka igen.  Den undre stapeln beskriver hur länge hen kan springa och är ointressant för detta experiment.
+
+Blinkmekaniken introducerar ett visst mått av "taktikblinkande" till spelet; det är gynnsamt att blinka ofta när monstret inte är i sikte, för att maximera tiden till nästa blinkning då SCP-173 väl dyker upp. Därför förmedlar blinkmätaren information som blir betydligt viktigare när monstret är i närheten.
+
 
 \section{Hypotes}
-Tanken är att spelaren kommer att hålla mer fokus på HUDen när monstret är nära. Det är intressant att veta var spelaren har fokus när man möter monstret, så att man vet hur mycket arbete man ska lägga på detaljerna i omgivningen. Det är också intressant att veta hur mycket HUDen används i allmänhet.
+Tanken är att spelaren kommer att hålla mer fokus på HUDen när monstret är nära. Det är intressant att veta var spelaren har fokus när hen möter monstret, så att spelutvecklaren kan få en idé om hur mycket arbete som bör läggas på detaljerna i omgivningen. Det är också intressant att veta hur mycket HUDen används i allmänhet.
 
 \section{Metod}
-Första steget är att bestämma \textit{areas-of-interest} på skärmen för var HUDen är. Detta är området som är intressant att se hur mycket blicken ligger vid.
+Första steget är att bestämma \textit{areas-of-interest} på skärmen för var HUDen är. Detta är det område som är intressant att se hur mycket blicken ligger vid. Intresseområdet ligger inom det lilla röda området i Figur~\ref{hud}.
 
 För att samla data spelas en spelomgång in vid en eye-tracker som kan följa ögonen på skärmen. Först får spelaren spela en omgång utan inspelning för att bekanta sig med spelet. Detta är för att hen ska vara bekant med var HUDen finns och vad den innebär. 
 
@@ -59,21 +76,40 @@ Värmekartorna gjordes genom att beräkna ett genomsnitt över var spelaren titt
 
 \begin{figure}[h!]
     \begin{center}
-        \includegraphics*[width=0.50\columnwidth]{experiment/bars.png}
+        \includegraphics*[width=0.50\columnwidth]{experiment/bars-grayscale.png}
         \caption{Fokus på HUD.}
         \label{bars}
     \end{center}
 \end{figure}
 
+Staplarna i Figur~\ref{bars} beskriver hur länge spelaren tittade inom HUDens område (se det röda området i Figur~\ref{hud}) jämfört med den totala tiden vid närvaro respektive frånvaro av monstret.
 
 
 \section{Slutsats}
 
 Resultatet motsäger hypotesen eftersom spelaren tittade mindre på HUDen vid monsterkontakt snarare än mer (se figur~\ref{bars}). Dock är varken hypotesen eller datan tillräckliga för att enskilt användas som underlag för beslut kring den visuella designen. Det finns många faktorer som inte har tagits hänsyn till i hypotesen som är viktiga för att kunna göra ett beslut om HUDen, exempelvis hur mycket utvecklarna vill att spelaren ska se HUDen vid monsterkontakt, hur erfaren en spelare är eller hur mycket som är tillräcklig fokustid för att en spelare ska kunna få ut någonting av HUDen.
 
-När man jämför de två värmekartorna (se figurer~\ref{no_contact} och \ref{contact}) kan man notera ett fenomen som skulle kunna vara både intressant och relevant att undersöka vidare; nämligen att spelarens blick verkar flacka betydligt mer vid monsterkontakt. För att kunna tillgodogöra sig resultatet i experimentet kan man behöva fastställa om detta har någon effekt på hur hen tar till sig och bearbetar information. Denna eventuella effekt kan vara till skada likväl som till nytta, beroende på vad en sådan studie skulle utvisa och vad spelutvecklaren vill uppnå.
+Vid jämförelse av de två värmekartorna (se figurer~\ref{no_contact} och \ref{contact}) kan ett fenomen noteras som skulle kunna vara både intressant och relevant att undersöka vidare; nämligen att spelarens blick verkar flacka betydligt mer vid monsterkontakt. 
 
-Figur~\ref{bars} är kraftfullast med avseende på hypotesen och svarar i sig själv på hypotesen. Värmekartorna i andra hand ger mer kontext till experimentet och ger en översikt på hur blicken hos en spelare rör sig.
+Figur~\ref{bars} är kraftfullast med avseende på hypotesen och besvarar den i sig själv. Diagrammet visar bara förhållandet mellan hur mycket tid som tittades på HUDen jämfört med hela scenen. Det säger ingenting om hur blickerna var utspridda, vilket värmekartorna gör istället. Diagrammet är i gråskala av flera anledningar, dels finns bara två staplar och kontrasten mellan dem särskiljer dem tillräckligt, dels skulle färg oavsiktligt medföra värderingar till staplarna.
+
+Värmekartorna ger mer kontext till experimentet och ger en översikt på hur blicken hos en spelare rör sig. Visualiseringen förlitar sig mer på färgens densitet än på dess kulörthet. Densiteten kan fortfarande uppfattas även med färgblindhet, som kan ses i figurer \ref{heatmap-red-blind} och \ref{heatmap-green-blind}.
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics*[width=0.50\columnwidth]{experiment/Contact_Heatmap_protanopia.jpg}
+        \caption{Rödblindhetssimulering \cite{ColorBlindness}}
+        \label{heatmap-red-blind}
+    \end{center}
+\end{figure}
+
+\begin{figure}[h!]
+    \begin{center}
+        \includegraphics*[width=0.50\columnwidth]{experiment/Contact_Heatmap_deuteranopia.jpg}
+        \caption{Grönblindhetsimulering \cite{ColorBlindness}}
+        \label{heatmap-green-blind}
+    \end{center}
+\end{figure}
 
 Slutligen bör det påpekas att den insamlade mängden data är för liten för att ens kunna fastställa en trend. Då endast fem personer deltog i experimentet, och värdefull data inte kunde utvinnas från allihop innebär det att resultatet lika gärna skulle kunna bero på slumpen.
 
